@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css.css">
+    <title>Temperature Converter</title>
+</head>
+<body>
+    <form action="">
+        <h1>Temperature Conversion:</h1>
+        <input type="number" id="temp"><br><br>
+        <input type="radio" id="toFahrenheit" name="unit">
+        <label for="">Celsius to Fahrenheit</label><br><br>
+        <input type="radio" id="toCelsius" name="unit">
+        <label for="">Fahrenheit to Celsius</label><br><br>
+        <input type="submit" id="submit"><br><br>
+        <label for="">Result :</label>
+        <input type="number" id="result" readonly>
+    </form>
+    <script src="js.js"></script>
+</body>
+</html>
+
+<!-- You could use place the onsubmit="convert()" in the form tag so that when the form is submitted the convert
+     will run and the answer is displayed....You can also place onclick="convert()" int the submit input it will 
+     also run the convert method and display the answer.
+-->

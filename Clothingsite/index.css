@@ -1,0 +1,913 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+nav{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 15px;
+  float: right;
+  padding: 15px;
+}
+
+.logo{
+  margin-left: 4%;
+  font-size: 30px;
+  float: left;
+  padding: 9px;
+}
+
+.logo sub{
+  font-size: small;
+
+}
+
+nav ul li{
+  padding: 15px 29px;
+  list-style-type: none;
+  display: inline-block;
+}
+
+nav ul li a{
+  text-decoration: none;
+  font-size: 16px;
+  color: black;
+  font-weight: 700;
+}
+
+/* nav hover section*/
+
+nav ul li:hover{
+  background-color: #c6e8f3;
+  border-radius: 20px;
+  transition: all 0.3s ease-in-out;
+}
+
+nav .active{
+  border-radius: 20px;
+  background-color: #26e650;
+  border: none;
+}
+
+.more{
+  display: none;
+}
+
+
+/* Done */
+
+.whole_light{
+  display: none;
+}
+
+
+
+/*styling for the dropdown*/
+nav .dropdown{
+  position: absolute;
+  width: 140px;
+  top: 80px;
+  left: 760px;
+  padding: 6px;
+  background-color: white;
+  box-shadow: 2px 2px 4px 0px black;
+  border-radius: 20px;
+  z-index: 999;
+}
+
+nav .dropdown ul li{
+  display: block;
+}
+
+nav .drop{
+  display: none;
+}
+
+nav .drop-products:hover .drop{
+  display: block;
+}
+
+.user .dropdown2{
+  position: absolute;
+  width: 150px;
+  top: 80px;
+  left: 66em;
+  padding: 5px;
+  background-color: white;
+  box-shadow: 2px 2px 4px 0px black;
+  border-radius: 20px;
+  z-index: 999;
+}
+
+.user .dropdown2 ul li{
+  display: block;
+}
+
+.user .dropdown2 ul li:hover{
+  background-color: #c6e8f3;
+}
+
+.user .dropdown2 ul #logout li:hover{
+  background-color: #dc143c;
+}
+
+.user .drop2{
+  display: none;
+}
+
+.user:hover .drop2{
+  display: block;
+}
+
+.emoji i:hover{
+color: #D8EFF7;
+}
+
+
+/* Done */
+
+/*styling the into page that comes with cloth for the clothless*/
+
+.intro{
+  width: 100%;
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  background-position: center; 
+  animation: image;
+  animation-duration:  30s;
+  animation-iteration-count:  infinite;
+  transition: all 0.3s ease;
+  border-radius: 30px;
+}
+
+
+
+/* A keyframe that makes the images at the background of the into page changes with time */
+@keyframes image{
+  0%, 50%{
+
+    background-size: cover;
+    background-image: url(images/clothsHanged.jpg);
+    
+  }
+ 
+  50%, 75%{
+  
+background-size: cover;
+background-image: url(images/buycloth.jpg);
+
+  }
+  75%, 100%{
+
+    background-size: cover;
+    background-image: url(images/blueshirt.jpg);
+    
+  }
+}
+/*key frames ends there */
+
+
+
+.intro  button{
+  width: 7em;
+  height: 2.8em;
+  padding: 9px 8px;
+  margin-left: 9%;
+  color: black;
+  font-weight: 700;
+  background-color:#3ceb35;
+  border-radius: 9px 9px 9px;
+  border: none;
+  transition: all 0.5s ease-out;
+}
+
+.intro  button:hover{
+letter-spacing: 2px;
+background-color: #D8EFF7;
+}
+
+.intro div{
+  margin-top: 7em;
+  margin-left: 9%;
+  width: 40%;
+  justify-items: left;
+}
+
+
+
+.intro div h1{
+  font-size: 3em;
+
+}
+
+/* The into styling  ends there */
+
+/* second intro div that has text and image on both sides */
+.second_intro{
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  padding: 3em;
+  margin-top: 20px;
+}
+
+.second_intro .first{
+padding: 20px;
+display: flex;
+flex-direction: column;
+gap: 20px;
+font-size: 1.2em;
+}
+
+.second_intro .second{
+  margin-top: 10px;
+  background-image: url(images/cloths.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 15px;
+}
+
+/* for the buttons with the second intro div*/
+
+.button{
+  width: 70%;
+  display: flex;
+  gap: 5px;
+}
+
+.button button{
+  border-radius: 8px;
+}
+
+.firstB,.secondB{
+padding: 10px 0px;
+border: none;
+}
+
+.firstB{
+  width: 30%;
+  background-color:  #9CBBFC;
+}
+
+.firstB a{
+  text-decoration: none;
+  color: black;
+}
+
+.secondB a{
+  text-decoration: none;
+  color: black;
+}
+
+.secondB{
+  width: 70%;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border: 1px solid black;
+  background-color: transparent;
+}
+/* buton styling ends there */
+
+/* for button hovers*/
+.firstB:hover{
+  background-color: #D8EFF7;
+  transition: all 0.3s ease-in-out;
+}
+
+.secondB:hover{
+  background-color:  #D8EFF7;
+  transition: all 0.3s ease-in-out;
+}
+/*The button hover ends there */
+
+
+/*Main starts*/
+
+main{
+  width: 80vw;
+  margin: 0px auto;
+  display: grid;
+  grid-template-columns:repeat( 2,1fr);
+  gap: 10px;
+
+}
+
+main div:nth-child(1),main div:nth-child(4),main div:nth-child(5),main div:nth-child(8){
+  height: 30vh;
+}
+
+main div:nth-child(2),main div:nth-child(3),main div:nth-child(6),main div:nth-child(7){
+  height: 70vh;
+}
+
+
+
+.big{
+grid-row: span 2;
+display: flex;
+justify-content: center;
+align-items: center;
+
+}
+
+.big img{
+  width: 80%;
+  height: 95%;
+  border-radius: 15px;
+  object-fit: cover;
+}
+
+
+#fsmall{
+ justify-items: center;
+ align-content: center;
+ height: 90px;
+}
+.small{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.small .get_started{
+  width: 25%;
+  border: none;
+  border-radius: 10px;
+  padding: 10px;
+  background-color:   #9CBBFC;
+}
+
+.small .get_started:hover{
+
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+.small .learn_more{
+  width: 25%;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  background-color: transparent;
+}
+
+.small .learn_more:hover{
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+/**The container the four new arrival cards is within***/
+.container {
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  justify-content: center;
+  margin-left: 60px;
+}
+
+.onEverything{
+
+    width: 90%;
+    height: 100px;
+   margin: 50px auto;
+  border-radius: 10px;
+    border: 1px solid;
+    display: flex;
+    position: relative;
+    background-image: linear-gradient(to right, #4840A3,#9CBBFC, #D8EFF7);
+
+}
+
+.onEverything .first{
+  width: 50%;
+  height: 100%;
+  position: relative;
+}
+
+.onEverything .first p{
+  text-align: center;
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+font-weight: 500;
+}
+
+.onEverything.first p span{
+  font-weight: 800;
+  letter-spacing: 6px;
+  font-size: 1.5rem;
+}
+
+.onEverything .second{
+  width: 50%;
+  height: 100%;
+  position: relative;
+}
+
+.onEverything .second p{
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.onEverything .second button{
+  text-align: center;
+  position: absolute;
+  top: 80%;
+  left: 57%;
+  transform: translate(-70%, -70%);
+  width: 170px;
+  background-color: rgb(73, 67, 67);
+ color: whitesmoke;
+}
+
+
+
+
+.categories{
+  width: 50em;
+ gap: 30px;
+ margin-left: 28px;
+  /* margin: 0 auto; */
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+}
+
+.card {
+  width: 250px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.card1{
+
+  width: 350px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+
+}
+
+.card1 img{
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 10px 10px 0 0;
+  transition: transform 0.2s ease-in-out;
+
+}
+
+
+.card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 10px 10px 0 0;
+  transition: transform 0.2s ease-in-out;
+}
+
+.card:hover{
+
+  box-shadow: 0 8px 16px #D8EFF7;
+ 
+}
+.card h2 {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.price {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+}
+
+.cart_button{
+  width: 50%;
+  border-radius: 5px;
+  border: none;
+  padding: 10px;
+  background-color: 	#007bff;
+  color: white;
+  /* background-image: linear-gradient(to right,#9CBBFC, #D8EFF7,#9CBBFC); */
+
+}
+
+.cart_button:hover{
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+
+}
+
+/*The open sales container styling */
+
+.help-container {
+  position: relative;
+  height: 300px;
+  background-image: url(images/opensales.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+/****/
+
+.features {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.feature {
+  width: calc(33.33% - 20px);
+  background-color: #fff;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  animation: appear linear;
+  animation-timeline: view();
+  animation-range: entry 0 cover 40%;
+}
+
+.feature h2 {
+  margin-top: 0;
+}
+
+@keyframes appear{
+  from{
+    opacity: 0;
+    scale: 0.5;
+  }
+  to{
+    opacity: 1;
+    scale: 1;
+  }
+}
+
+
+
+/*styling for the footer of the website */
+          
+footer{
+  /* background-image: linear-gradient(to right, #4840A3,#9CBBFC, #D8EFF7); */
+  width: 100%;
+  height: 15em;
+  padding: 20px;
+  border: 0.5px solid white;
+  color: black;
+  justify-items: center;
+  display: flex;
+  border: 1.5px solid #ddd;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.mensoles{
+  width: 25%;
+  height: 100%;
+  float: left;
+}
+
+.social{
+  width: 100%;
+  height: 20vh;
+  margin-top: 1vh;
+  display: inline-block;
+  font-size: 1.5rem;
+  padding: 15px;
+}
+
+.categories1{
+  width: 25%;
+  height: 100%;
+  justify-items: center;
+}
+
+.resources{
+  width: 25%;
+  height: 70%;
+  text-align: center;
+}
+
+.subscribe{
+  width: 25%;
+  height: 100%;
+  text-align: center;
+}
+
+.subscribe input{
+  margin-top: 17px;
+  text-align: center;
+  width: 250px;
+  height: 40px;
+  border-radius: 20px;
+  border: 0.2px solid;
+}
+
+.subscribe button{
+  width: 250px;
+  height: 48px;
+  padding: 20px;
+  border: 0.2px solid;
+  border-radius: 20px;
+  background-color: rgb(24, 187, 24);
+}
+
+
+.subscribe button:hover{
+  background-color: slateblue;
+}
+/**/
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 739px){
+  /* media for phone */
+    .logo{
+      font-size: 2.5em;
+    }
+  
+    nav ul{
+      display: none;
+      }
+  
+      .more{
+        display: block;
+        font-size: 2.5em;
+      }
+      /**/
+  
+      /* for the light box*/
+      .whole_light{
+        display: block;
+      }
+  .lightbox{
+    display: table;
+    opacity: 0;
+    z-index: -1;
+    transition-duration: 1s;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color:#9CBBFC;
+  
+  }
+  .lightbox a{
+    display: block;
+    font-size: 3em;
+    text-decoration: none;
+    color: black;
+    font-weight: 700;
+  
+  }
+  
+  
+  
+  .lightbox:target{
+    opacity: 1;
+    z-index: 1;
+  }
+  
+  .lightbox_content{
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+  }
+  
+  .close{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 2em;
+    font-weight: 500;
+    text-decoration: none;
+    color: white;
+  }
+  
+  /*for the intro that has the cloth for the clothless*/
+  .intro div h1{
+    font-size: 4em;
+  }
+  
+  .intro button{
+    width: 50vw;
+    font-size: 1.8em;
+    font-size: 500;
+  }
+  
+  
+      /* second intro*/
+      .second_intro{
+  grid-template-columns: repeat(1,1fr);
+    
+      }
+  
+      
+  .firstB{
+    width: 60vw;
+    font-size: 1.2em;
+  
+  }
+  
+  .secondB{
+    width: 70%;
+    font-size: 1em;
+  }
+  
+      
+  .second_intro .first p{
+    font-size: 2em;
+    }
+  
+      .second_intro .second{
+        height: 30vh;
+      width: 80vw;
+        background-size: cover;
+      }
+  
+      /*for main*/
+      main{
+        width: 95vw;
+        margin: 0 auto;
+      }
+  main p{
+    font-size: 1.8em;
+  }
+      /*for  small*/
+      .small p{
+        font-size: 1.7em;
+      }
+  
+      main div:nth-child(1),main div:nth-child(4),main div:nth-child(5),main div:nth-child(8){
+        height: 70vh;
+      }
+  
+      .small .get_started{
+        width: 50%;
+        font-size: 1.2em;
+       
+      }
+  
+      
+  .small .learn_more{
+    width: 50%;
+    font-size: 1em;
+  }
+  
+  .big img{
+    width: 100%;
+    object-fit: cover;
+  }
+  
+  /*container*/
+  .container {
+    width: 95vw;
+    grid-template-columns: repeat(2,1fr);
+    margin: 0 auto;
+  
+  }
+  
+  
+  
+  .card {
+    width: 180px;
+    padding: 10px;
+  }
+  
+  .card p{
+    font-size: 1.2em;
+  }
+  
+  .card button{
+    width: 100%;
+    font-size: 1.2em;
+    font-weight: 800;
+  }
+  
+  /*categories section*/
+  
+  
+  .categories{
+   width: 70vw;
+   margin: 0 auto;
+    grid-template-columns: repeat(1,1fr);
+  }
+  
+  .categories .card1{
+    width: 300px;
+  }
+  
+  .help-container {
+    width: 100vw;
+  
+  }
+  
+  
+  
+  .features {
+   margin: 10px auto;
+   flex-direction: column;
+  }
+  
+  .feature{
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  
+  
+  /*footer*/
+  footer{
+     background-image: linear-gradient(to top, #4840A3,#9CBBFC, #D8EFF7);
+    display: grid;
+    margin-top: auto;
+    width: 100vw;
+    gap: 10px;
+    border: none;
+    
+  }
+  
+  .mensoles{
+    width: 100vw;
+    border: none;
+  }
+  
+  .mensoles i{
+    font-size: 5rem;
+  }
+  
+  .categories1{
+    width: 100vw;
+    font-size: 2rem;
+  }
+  
+  .resources{
+    width: 100vw;
+    font-size: 2rem;
+  }
+  
+  .subscribe{
+    width: 100vw;
+    font-size: 2rem;
+  }
+  
+  .subscribe input,.subscribe button{
+    width: 90vw;
+    margin:  0 auto;
+  }
+  
+  .subscribe input{
+    font-size: 1em;
+  }
+  
+  .subscribe button{
+    padding: 20px;
+    font-size: 15px;
+    font-weight: 700;
+  }
+  
+  
+  
+  
+  
+  
+         
+    }
+  
+  
+
+  
+
+
+
+
+  
+
+
+
+
+
+
+
+

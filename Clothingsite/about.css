@@ -1,0 +1,438 @@
+
+nav{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 15px;
+  float: right;
+  padding: 15px;
+}
+
+.logo{
+  margin-left: 4%;
+  font-size: 30px;
+  float: left;
+  padding: 9px;
+}
+
+.logo sub{
+  font-size: small;
+
+}
+
+nav ul li{
+  padding: 15px 29px;
+  list-style-type: none;
+  display: inline-block;
+}
+
+nav ul li a{
+  text-decoration: none;
+  font-size: 16px;
+  color: black;
+  font-weight: 700;
+}
+
+/* nav hover section*/
+
+nav ul li:hover{
+  background-color: #c6e8f3;
+  border-radius: 20px;
+  transition: all 0.3s ease-in-out;
+}
+
+nav .active{
+  border-radius: 20px;
+  background-color: #26e650;
+  border: none;
+}
+
+.more{
+  display: none;
+}
+
+
+/* Done */
+
+.whole_light{
+  display: none;
+}
+
+
+
+/*styling for the dropdown*/
+nav .dropdown{
+  position: absolute;
+  width: 140px;
+  top: 100px;
+  left: 710px;
+  padding: 6px;
+  background-color: white;
+  box-shadow: 2px 2px 4px 0px black;
+  justify-items: center;
+  border-radius: 20px;
+  z-index: 999;
+}
+
+nav .dropdown ul li{
+  display: block;
+  margin-right: 35px;
+}
+
+nav .drop{
+  display: none;
+}
+
+nav .drop-products:hover .drop{
+  display: block;
+}
+
+.user .dropdown2{
+  position: absolute;
+  width: 130px;
+  top: 100px;
+  left: 64em;
+  padding: 2px;
+  background-color: white;
+  justify-items: center;
+  box-shadow: 2px 2px 4px 0px black;
+  border-radius: 20px;
+  z-index: 999;
+}
+
+.user .dropdown2 ul li{
+  display: block;
+  margin-right: 80px;
+}
+
+.user .dropdown2 ul li:hover{
+  background-color: #c6e8f3;
+}
+
+.user .drop2{
+  display: none;
+}
+
+.user:hover .drop2{
+  display: block;
+}
+
+.user .dropdown2 ul #logout li:hover{
+  background-color: rgb(238, 102, 102);
+}
+
+
+.emoji i:hover{
+color: #D8EFF7;
+}
+
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  clear: both;
+}
+
+.about {
+  max-width: 800px;
+  margin: 40px auto;
+  text-align: justify;
+}
+
+.about h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.about p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.team {
+  margin-top: 40px;
+}
+
+.team-members {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.team-member {
+  margin: 20px;
+  text-align: center;
+}
+
+.team-member img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+  clear: both;
+}
+
+@media (max-width: 739px){
+  /* media for phone */
+    .logo{
+      font-size: 2.5em;
+    }
+  
+    nav ul{
+      display: none;
+      }
+  
+      .more{
+        display: block;
+        font-size: 2.5em;
+      }
+      /**/
+  
+      /* for the light box*/
+      .whole_light{
+        display: block;
+      }
+  .lightbox{
+    display: table;
+    opacity: 0;
+    z-index: -1;
+    transition-duration: 1s;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color:#9CBBFC;
+  
+  }
+  .lightbox a{
+    display: block;
+    font-size: 3em;
+    text-decoration: none;
+    color: black;
+    font-weight: 700;
+  
+  }
+  
+  
+  
+  .lightbox:target{
+    opacity: 1;
+    z-index: 1;
+  }
+  
+  .lightbox_content{
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+  }
+  
+  .close{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 2em;
+    font-weight: 500;
+    text-decoration: none;
+    color: white;
+  }
+  
+  /*for the intro that has the cloth for the clothless*/
+  .intro div h1{
+    font-size: 4em;
+  }
+  
+  .intro button{
+    width: 50vw;
+    font-size: 1.8em;
+    font-size: 500;
+  }
+  
+  
+      /* second intro*/
+      .second_intro{
+  grid-template-columns: repeat(1,1fr);
+    
+      }
+  
+      
+  .firstB{
+    width: 60vw;
+    font-size: 1.2em;
+  
+  }
+  
+  .secondB{
+    width: 70%;
+    font-size: 1em;
+  }
+  
+      
+  .second_intro .first p{
+    font-size: 2em;
+    }
+  
+      .second_intro .second{
+        height: 30vh;
+      width: 80vw;
+        background-size: cover;
+      }
+  
+      /*for main*/
+      main{
+        width: 95vw;
+        margin: 0 auto;
+      }
+  main p{
+    font-size: 1.8em;
+  }
+      /*for  small*/
+      .small p{
+        font-size: 1.7em;
+      }
+  
+      main div:nth-child(1),main div:nth-child(4),main div:nth-child(5),main div:nth-child(8){
+        height: 70vh;
+      }
+  
+      .small .get_started{
+        width: 50%;
+        font-size: 1.2em;
+       
+      }
+  
+      
+  .small .learn_more{
+    width: 50%;
+    font-size: 1em;
+  }
+  
+  .big img{
+    width: 100%;
+    object-fit: cover;
+  }
+  
+  /*container*/
+  .container {
+    width: 95vw;
+    grid-template-columns: repeat(2,1fr);
+    margin: 0 auto;
+  
+  }
+  
+  
+  
+  .card {
+    width: 180px;
+    padding: 10px;
+  }
+  
+  .card p{
+    font-size: 1.2em;
+  }
+  
+  .card button{
+    width: 100%;
+    font-size: 1.2em;
+    font-weight: 800;
+  }
+  
+  /*categories section*/
+  
+  
+  .categories{
+   width: 70vw;
+   margin: 0 auto;
+    grid-template-columns: repeat(1,1fr);
+  }
+  
+  .categories .card1{
+    width: 300px;
+  }
+  
+  .help-container {
+    width: 100vw;
+  
+  }
+  
+  
+  
+  .features {
+   margin: 10px auto;
+   flex-direction: column;
+  }
+  
+  .feature{
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  
+  
+  /*footer*/
+  footer{
+     background-image: linear-gradient(to top, #4840A3,#9CBBFC, #D8EFF7);
+    display: grid;
+    margin-top: auto;
+    width: 100vw;
+    gap: 10px;
+    border: none;
+    
+  }
+  
+  .mensoles{
+    width: 100vw;
+    border: none;
+  }
+  
+  .mensoles i{
+    font-size: 5rem;
+  }
+  
+  .categories1{
+    width: 100vw;
+    font-size: 2rem;
+  }
+  
+  .resources{
+    width: 100vw;
+    font-size: 2rem;
+  }
+  
+  .subscribe{
+    width: 100vw;
+    font-size: 2rem;
+  }
+  
+  .subscribe input,.subscribe button{
+    width: 90vw;
+    margin:  0 auto;
+  }
+  
+  .subscribe input{
+    font-size: 1em;
+  }
+  
+  .subscribe button{
+    padding: 20px;
+    font-size: 15px;
+    font-weight: 700;
+  }
+  
+  
+  
+  
+  
+  
+         
+    }
+  
+  

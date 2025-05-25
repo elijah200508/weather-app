@@ -1,0 +1,222 @@
+nav{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.logo{
+  margin-left: 4%;
+  font-size: 30px;
+  float: left;
+  padding: 9px;
+}
+
+.logo sub{
+  font-size: small;
+
+}
+
+nav ul li{
+  padding: 15px 27px;
+  list-style-type: none;
+  display: inline-block;
+}
+
+nav ul li a{
+  text-decoration: none;
+  font-size: 16px;
+  color: black;
+  font-weight: 700;
+}
+
+nav ul li a.active{
+  padding: 20px ;
+}
+
+
+/* nav hover section*/
+
+nav ul li:hover{
+  background-color: #c6e8f3;
+  border-radius: 20px;
+  transition: all 0.3s ease-in-out;
+}
+
+.active{
+  border-radius: 20px;
+  background-color: #26e650;
+  border: none;
+}
+
+.more{
+  display: none;
+}
+
+/*styling for the dropdown*/
+nav .dropdown{
+  position: absolute;
+  width: 140px;
+  top: 65px;
+  left: 634px;
+  padding: 6px;
+  background-color: white;
+  box-shadow: 2px 2px 4px 0px black;
+  border-radius: 20px;
+  z-index: 999;
+  margin-top: 40px;
+  justify-items: center;
+  
+}
+
+nav .dropdown ul li{
+  display: block;
+  margin-right: 40px;
+}
+
+nav .drop{
+  display: none;
+}
+
+nav .drop-products:hover .drop{
+  display: block;
+}
+
+.emoji i:hover{
+color: #D8EFF7;
+}
+
+
+/*  */
+
+
+.product-grid {
+  display: flex;
+  max-width: 1200px;
+  margin: 40px auto;
+}
+
+.large-product {
+  width: 40%;
+  margin-right: 20px;
+}
+
+.large-product img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 10px;
+  transition: transform 0.2s ease-in-out;
+}
+
+.large-product img:hover {
+  transform: scale(1.05);
+}
+
+.small-products {
+  width: 60%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  float: right;
+}
+
+.small-product {
+  width: 30%;
+  margin: 10px;
+}
+
+.small-product img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 10px;
+  transition: transform 0.2s ease-in-out;
+}
+
+.small-product img:hover {
+  transform: scale(1.05);
+}
+
+.sma
+
+.product-info {
+  padding: 10px;
+}
+
+.product-info button{
+  padding: 3px;
+  background-color: #26e650;
+  font-size: 12px;
+  border: none;
+}
+
+.product-info h2, .product-info h3 {
+  margin-bottom: 10px;
+}
+
+.add-to-cart {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.add-to-cart:hover {
+  background-color: #444;
+}
+
+
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+  clear: both;
+}
+
+@media (max-width: 739px){
+
+ nav ul{
+  display: none;
+ }
+  .product-grid {
+  flex-direction: column;
+  }
+
+  
+.large-product {
+  width: 80%;
+margin: 0 auto;
+}
+
+.small-product {
+  width: 100em;
+margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 30px;
+
+}
+
+.small-product img{
+  width: 100%;
+}
+.small-product .product-info{
+ 
+  display: flex;
+  flex-direction: column;
+
+
+  
+}
+.small-product button{
+  width: 30vw;
+}
+
+
+
+}

@@ -1,0 +1,270 @@
+nav{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 15px;
+  float: right;
+  padding: 15px;
+}
+
+.logo{
+  margin-left: 4%;
+  font-size: 30px;
+  float: left;
+  padding: 9px;
+}
+
+.logo sub{
+  font-size: small;
+
+}
+
+nav ul li{
+  padding: 15px 29px;
+  list-style-type: none;
+  display: inline-block;
+}
+
+nav ul li a{
+  text-decoration: none;
+  font-size: 16px;
+  color: black;
+  font-weight: 700;
+}
+
+/* nav hover section*/
+
+nav ul li:hover{
+  background-color: #c6e8f3;
+  border-radius: 20px;
+  transition: all 0.3s ease-in-out;
+}
+
+nav .active{
+  border-radius: 20px;
+  background-color: #26e650;
+  border: none;
+}
+
+nav ul li a.active{
+  padding: 25px ;
+}
+
+.more{
+  display: none;
+}
+
+
+/*styling for the dropdown*/
+nav .dropdown{
+  position: absolute;
+  width: 140px;
+  top: 100px;
+  left: 710px;
+  padding: 6px;
+  background-color: white;
+  justify-items: center;
+  box-shadow: 2px 2px 4px 0px black;
+  border-radius: 20px;
+  z-index: 999;
+}
+
+nav .dropdown ul li{
+  display: block;
+  margin-right: 35px;
+}
+
+nav .drop{
+  display: none;
+}
+
+nav .drop-products:hover .drop{
+  display: block;
+}
+
+.user .dropdown2{
+  position: absolute;
+  width: 150px;
+  top: 100px;
+  left: 66em;
+  padding: 5px;
+  background-color: white;
+  justify-items: center;
+  box-shadow: 2px 2px 4px 0px black;
+  border-radius: 20px;
+  z-index: 999;
+}
+
+.user .dropdown2 ul li{
+  display: block;
+  margin-right: 25px;
+}
+
+.user .dropdown2 ul li:hover{
+  background-color: #c6e8f3;
+}
+
+.user .drop2{
+  display: none;
+}
+
+.user:hover .drop2{
+  display: block;
+}
+
+.user .dropdown2 ul #logout li:hover{
+  background-color: rgb(238, 102, 102);
+}
+
+
+.emoji i:hover{
+color: #D8EFF7;
+}
+
+
+.whole_light{
+  display: none;
+}
+
+.men-products {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 20px;
+  clear: both;
+}
+
+.men-products h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.product {
+  background-color: #fff;
+  padding: 20px;
+  border: 1px solid #ddd;
+  transition: transform 0.2s ease-in-out;
+}
+
+.product:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.product img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.product h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.product p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.add-to-cart {
+  background-image: linear-gradient(to right,#9CBBFC, #D8EFF7,#9CBBFC);
+  color: black;
+  font-weight: 600;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.add-to-cart:hover {
+  background-color: #444;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+  clear: both;
+}
+
+@media (max-width: 739px){
+  nav ul{
+    display: none;
+  }
+
+  .men-products {
+width: 98vw;
+  margin: 0px auto;
+  padding: 3px;
+}
+
+.product p {
+  font-size: 1.4em;
+  margin-bottom: 20px;
+}
+
+
+  
+.more{
+  display: block;
+  font-size: 3em;
+}
+
+    /* for the light box*/
+    .whole_light{
+      display: block;
+    }
+.lightbox{
+  display: table;
+  opacity: 0;
+  z-index: -1;
+  transition-duration: 0s;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+   background-image: linear-gradient(to top, #4840A3,#9CBBFC, #D8EFF7);
+
+}
+.lightbox a{
+  display: block;
+  font-size: 3em;
+  text-decoration: none;
+  color: black;
+  font-weight: 700;
+
+}
+
+
+
+.lightbox:target{
+  opacity: 1;
+  z-index: 1;
+}
+
+.lightbox_content{
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.close{
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 2em;
+  font-weight: 500;
+  text-decoration: none;
+  color: white;
+}
+}
