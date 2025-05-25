@@ -21,14 +21,21 @@
             git add . = this command is used to copy all the codes and changes that you have written ready to commit....
 
             git commit -m = this command is used save your work to the local repository...you then follow this command 
-            by a note to remember the programmer where they left of.
+            by a note to remember the programmer where they left of. eg. git commit -m "The footer section"
 
             git push origin main = this command is used to your saved work in your local repository to your remote
-            repository git hub...
+            repository git hub...If you are in another branch aside main say "feature1", you will use "git push origin"
+            followed by the name of the branch ie."git push origin feature1"
 
             git checkout feature1 = this command is used to switch branches..Momentarily we have two branches, main and 
             feature1 so by default the main is the branch in use....so after the the branch feature1 was created we use 
             git checkout feature1 to switch from the main branch to the feature1 branch...
+
+            TO DELETE A FOLDER OR A FILE FROM A BRANCH....
+            use the commang "git rm -r " followed by the name of the folder or file eg. git rm -r index.html
+            then we commit the changes "git commit -m "A reminder message" ", then we use the git push origin main
+            the changes is pushed or sent to the remote repository..
+
         -->
     </body>
 </html>
